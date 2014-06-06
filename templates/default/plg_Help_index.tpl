@@ -24,56 +24,51 @@
 
   <div id="undercolumn_help">
     <h2 class="title"><!--{$tpl_title|h}--></h2>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h3 id="category" class="category_title">カテゴリ一覧</h3>
+        <ul>
+        <!--{section name=cnt loop=$arrHelp}-->
+          <!--{if $arrHelp[cnt].help_category != $bef_category}-->
+          <li><a href="#<!--{$arrHelp[cnt].help_category|escape}-->"><!--{$arrHelp[cnt].name|escape}--></a></li>
+          <!--{/if}-->
+          <!--{assign var=bef_category value=$arrHelp[cnt].help_category}-->
+        <!--{/section}-->
+        <!--{assign var=bef_category value=''}-->
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-8">
 
-    <div id="category" class="category_title">カテゴリ一覧</div>
-    <ul>
-    <!--{section name=cnt loop=$arrHelp}-->
-      <!--{if $arrHelp[cnt].help_category != $bef_category}-->
-      <li><a href="#<!--{$arrHelp[cnt].help_category|escape}-->"><!--{$arrHelp[cnt].name|escape}--></a></li>
-      <!--{/if}-->
-      <!--{assign var=bef_category value=$arrHelp[cnt].help_category}-->
-    <!--{/section}-->
-    <!--{assign var=bef_category value=''}-->
-    </ul>
+        <!--{section name=cnt loop=$arrHelp}-->
+          <!--{if $arrHelp[cnt].help_category != $bef_category}-->
+            <!--{if $bef_category != ''}-->
+        </div>
 
-    <div class="category_margin"></div>
+            <!--{/if}-->
+        <div id="<!--{$arrHelp[cnt].help_category|escape}-->" class="margin-bottom-xl">
+          <h3 class="category_title">
+            <!--{$arrHelp[cnt].name|escape}-->
+            <small><a href="#category">カテゴリ一覧へ</a></small>
+          </h3>
+          <!--{/if}-->
+              <div class="panel panel-default">
+                <table class="table table-bordered">
+                  <tr>
+                    <th width="50" align="center">Ｑ</th>
+                    <td><div class="help_question"><!--{$arrHelp[cnt].help_question|nl2br_html}--></div></td>
+                  </tr>
+                  <tr>
+                    <th width="50" align="center">Ａ</th>
+                    <td><div class="help_answer"><!--{$arrHelp[cnt].help_answer|nl2br_html}--></div></td>
+                  </tr>
+                </table>
+              </div>
+          <!--{assign var=bef_category value=$arrHelp[cnt].help_category}-->
+        <!--{/section}-->
+        </div>
 
-    <!--{section name=cnt loop=$arrHelp}-->
-      <!--{if $arrHelp[cnt].help_category != $bef_category}-->
-        <!--{if $bef_category != ''}-->
-          <div class="category_back"><a href="#category">カテゴリ一覧へ</a></div>
-          </td>
-        </tr>
-      </table>
+      </div>
     </div>
-
-    <div class="category_margin"></div>
-
-        <!--{/if}-->
-    <div id="<!--{$arrHelp[cnt].help_category|escape}-->">
-      <div class="category_title"><!--{$arrHelp[cnt].name|escape}--></div>
-      <table style="margin: 0px; padding: 0px;">
-        <tr>
-          <td>
-      <!--{/if}-->
-            <table>
-              <tr>
-                <th width="50" align="center">Ｑ</th>
-                <td><div class="help_question"><!--{$arrHelp[cnt].help_question|nl2br_html}--></div></td>
-              </tr>
-              <tr>
-                <th width="50" align="center">Ａ</th>
-                <td><div class="help_answer"><!--{$arrHelp[cnt].help_answer|nl2br_html}--></div></td>
-              </tr>
-            </table>
-      <!--{assign var=bef_category value=$arrHelp[cnt].help_category}-->
-    <!--{/section}-->
-          <div class="category_back"><a href="#category">カテゴリ一覧へ</a></div>
-          </td>
-        </tr>
-      </table>
-    </div>
-
   </div>
 </div>
 <!--▲CONTENTS-->

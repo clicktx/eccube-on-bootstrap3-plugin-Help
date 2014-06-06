@@ -344,7 +344,9 @@ __EOS__;
                 break;
             case DEVICE_TYPE_PC:
                 if (strpos($filename, 'frontparts/bloc/guide.tpl') !== false) {
-                    $objTransform->select('ul.button_like li',3)->insertAfter(file_get_contents($template_dir . 'plg_Help_snip_default_bloc_guide.tpl'));
+                    // $objTransform->select('ul.button_like li',3)->insertAfter(file_get_contents($template_dir . 'plg_Help_snip_default_bloc_guide.tpl'));
+                    $objTransform->select('div.list-group a',3)->insertAfter(file_get_contents($template_dir . 'plg_Help_snip_default_bloc_guide.tpl'));
+
                 }
                 break;
             case DEVICE_TYPE_ADMIN:

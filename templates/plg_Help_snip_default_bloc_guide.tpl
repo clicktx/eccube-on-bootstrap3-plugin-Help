@@ -19,6 +19,5 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *}-->
-        <li>
-            <a href="<!--{$smarty.const.ROOT_URLPATH}-->plugin/Help/plg_Help_index.php" class="<!--{if $tpl_page_category == "help"}--> selected<!--{/if}-->"
-            ><!--{$smarty.const.plg_Help_PAGE_TITLE}--></a></li>
+  <a href="<!--{$smarty.const.ROOT_URLPATH}-->plugin/Help/plg_Help_index.php" class="list-group-item<!--{if $tpl_page_category == "help"}--> selected<!--{/if}-->"
+  ><!--{$smarty.const.plg_Help_PAGE_TITLE}--><span class="fa fa-angle-right pull-right"></span></a>
