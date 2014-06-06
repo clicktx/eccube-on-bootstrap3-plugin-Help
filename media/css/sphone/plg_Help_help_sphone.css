@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+dl.form_help{
+width:100%;
+margin:10px 0 15px 0;
+padding:0;
+border-bottom:#999 solid 1px;
+position:relative;
+}
+dl.form_help dt{
+font-weight:bold;
+font-size:17px;
+padding:10px 10px 0;
+}
+dl.form_help dd{
+padding:0 10px 10px;
+border-bottom:#CCC solid 1px;
+}
+dl.form_help dd:last-child{
+border-bottom:0;
+}
+dl.form_help th.answer{
+color:#FF6633;
+}
