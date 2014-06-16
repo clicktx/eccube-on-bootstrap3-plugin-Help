@@ -31,7 +31,7 @@ class plugin_info {
     /** プラグインコード(必須)：システム上でのキーとなります。プラグインコードは一意である必要があります。 */
     static $PLUGIN_CODE        = "Help";
     /** プラグイン名(必須)：プラグイン管理・画面出力（エラーメッセージetc）にはこの値が出力されます。 */
-    static $PLUGIN_NAME        = "ヘルプ機能";
+    static $PLUGIN_NAME        = "ヘルプ機能 for EC-CUBE on BootStrap3";
     /** プラグインメインクラス名(必須)：本体がプラグインを実行する際に呼ばれるクラス。拡張子は不要です。 */
     static $CLASS_NAME         = "Help";
     /** プラグインバージョン(必須) */
@@ -39,13 +39,13 @@ class plugin_info {
     /** 本体対応バージョン(必須) */
     static $COMPLIANT_VERSION  = "2.12.0～2.13.1";
     /** 作者(必須) */
-    static $AUTHOR             = "株式会社クオーレ";
+    static $AUTHOR             = "clicktx";
     /** 説明(必須) */
-    static $DESCRIPTION        = "ヘルプ機能を追加します。";
+    static $DESCRIPTION        = "ヘルプ機能を追加します。テンプレート「EC-CUBE on BootStrap3」に最適化済。";
     /** 作者用のサイトURL：設定されている場合はプラグイン管理画面の作者名がリンクになります。 */
-    static $AUTHOR_SITE_URL    = "http://www.cuore.jp/";
+    static $AUTHOR_SITE_URL    = "http://perl.no-tubo.net";
     /** プラグインのサイトURL : 設定されている場合はプラグイン管理画面の作者名がリンクになります。 */
-    static $PLUGIN_SITE_URL   = "http://ec.cuore.jp/products/detail94.html";
+    static $PLUGIN_SITE_URL   = "https://github.com/clicktx/eccube-on-bootstrap3-plugin-Help";
     /** ライセンス */
     static $LICENSE        = "LGPL";
 }
