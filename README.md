@@ -7,3 +7,6 @@ EC-CUBE用のプラグインです。
 
 ### ダウンロード
 [リリース](https://github.com/clicktx/eccube-on-bootstrap3-plugin-Help/releases)
+
+### 注意点
+このプラグインはphpファイルやテンプレートファイルを各場所へファイルコピーしているのでインストール後にカスタマイズするにはコピーを編集する必要があります。
