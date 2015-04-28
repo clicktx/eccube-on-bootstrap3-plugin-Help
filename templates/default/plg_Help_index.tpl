@@ -27,15 +27,15 @@
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <h3 id="category" class="category_title">カテゴリ一覧</h3>
-        <ul>
+        <div class="list-group">
         <!--{section name=cnt loop=$arrHelp}-->
           <!--{if $arrHelp[cnt].help_category != $bef_category}-->
-          <li><a href="#<!--{$arrHelp[cnt].help_category|escape}-->"><!--{$arrHelp[cnt].name|escape}--></a></li>
+          <a href="#<!--{$arrHelp[cnt].help_category|escape}-->" class="list-group-item"><!--{$arrHelp[cnt].name|escape}--></a>
           <!--{/if}-->
           <!--{assign var=bef_category value=$arrHelp[cnt].help_category}-->
         <!--{/section}-->
         <!--{assign var=bef_category value=''}-->
-        </ul>
+        </div>
       </div>
       <div class="col-xs-12 col-md-8">
 
