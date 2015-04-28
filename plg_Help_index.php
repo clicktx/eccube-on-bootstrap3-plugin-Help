@@ -29,7 +29,7 @@ require_once PLUGIN_UPLOAD_REALDIR . 'Help/plg_Help_LC_Page_Help.php';
 // {{{ generate page
 
 $objPage = new plg_Help_LC_Page_Help();
-register_shutdown_function(array($objPage, "destroy"));
+// register_shutdown_function(array($objPage, "destroy"));
 $objPage->init();
 $objPage->process();
 ?>
